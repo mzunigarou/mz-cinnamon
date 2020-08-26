@@ -36,7 +36,6 @@ $(document).ready(function() {
 			data: data
 		}).then(function(data) {
 			var jsonResponse = JSON.parse(data);
-			if (console) console.log(jsonResponse.message);
 			if (jsonResponse.success) {
 				$("#uhId1").val(jsonResponse.map1.uhId);
 				$("#file1Name").text(jsonResponse.map1.filename);
@@ -76,7 +75,6 @@ $(document).ready(function() {
 			data: data
 		}).then(function(data) {
 			var jsonResponse = JSON.parse(data);
-			if (console) console.log(jsonResponse.message);
 			$("#fieldset2Id").show();
 			$("#file1NameR").text(jsonResponse.file1);
 			$("#file2NameR").text(jsonResponse.file2);
