@@ -23,6 +23,8 @@ $(document).ready(function() {
 	// Custom action for the Compare button
 	$("#compareButton").click(function(event) {
 		event.preventDefault();
+		$("#fieldset1Id").hide();
+		$("#fieldset2Id").hide();
 		var form = $('#formId')[0];
 		var data = new FormData(form);
 		$.ajax({
